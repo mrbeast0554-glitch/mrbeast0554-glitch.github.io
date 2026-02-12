@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>ProEdit Assets - Mobile Home</title>
+    <style>
+        /* Mobile Reset */
+        body { margin: 0; padding: 0; background: #050505; color: white; font-family: sans-serif; }
+        
+        /* Header */
+        .navbar { padding: 15px; background: #111; text-align: center; border-bottom: 1px solid #333; }
+        .logo { color: #00ff9d; font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+
+        /* Container */
+        .container { padding: 15px; max-width: 100%; }
+
+        /* AD SLOT (Responsive) */
+        .ad-slot { 
+            width: 100%; height: 100px; background: #1a1a1a; 
+            margin: 15px 0; display: flex; align-items: center; justify-content: center; 
+            border: 1px dashed #444; color: #666; font-size: 12px;
+        }
+
+        /* Grid for Articles */
+        .grid { display: grid; gap: 15px; grid-template-columns: 1fr; } /* Mobile: 1 Column */
+        
+        /* Article Card */
+        .card { 
+            background: #111; border: 1px solid #222; border-radius: 10px; 
+            overflow: hidden; padding-bottom: 15px; 
+        }
+        .thumbnail { 
+            width: 100%; height: 180px; background: #222; 
+            display: flex; align-items: center; justify-content: center; color: #555;
+        }
+        .content { padding: 15px; }
+        .card h3 { margin: 0 0 10px 0; font-size: 1.2rem; line-height: 1.4; }
+        
+        /* Button */
+        .btn { 
+            display: block; width: 100%; background: #00ff9d; color: black; 
+            text-align: center; padding: 12px 0; text-decoration: none; 
+            font-weight: bold; border-radius: 5px; margin-top: 10px;
+        }
+
+        /* Desktop ke liye adjustment */
+        @media (min-width: 768px) {
+            .grid { grid-template-columns: repeat(3, 1fr); } /* Desktop: 3 Columns */
+            .container { max-width: 1000px; margin: auto; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+    <a href="#" class="logo">ProEdit Mobile</a>
+</div>
+
+<div class="container">
+    <div class="ad-slot">PASTE MOBILE BANNER AD HERE (320x100)</div>
+
+    <h2>Latest Packs</h2>
+
+    <div class="grid">
+        <div class="card">
+            <div class="thumbnail">IMAGE HERE</div>
+            <div class="content">
+                <h3>CapCut Viral Transitions (2026)</h3>
+                <p style="color:#aaa; font-size:0.9rem;">Get smooth zoom and shake transitions for free.</p>
+                <a href="article.html" class="btn">Download Pack</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="thumbnail">IMAGE HERE</div>
+            <div class="content">
+                <h3>Cinematic Color Grading LUTS</h3>
+                <p style="color:#aaa; font-size:0.9rem;">iPhone to Cinematic look in one click.</p>
+                <a href="article.html" class="btn">Download Pack</a>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="thumbnail">IMAGE HERE</div>
+            <div class="content">
+                <h3>Sound Effects Bundle (SFX)</h3>
+                <p style="color:#aaa; font-size:0.9rem;">Best swoosh and hit sounds for editing.</p>
+                <a href="article.html" class="btn">Download Pack</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad-slot">PASTE MOBILE BANNER AD HERE (300x250)</div>
+</div>
+
+</body>
+</html>
